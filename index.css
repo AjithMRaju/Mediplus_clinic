@@ -631,7 +631,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background: #1a76d1;
+    background-image: linear-gradient(to right, rgb(26 118 209 / 72%), rgb(26 118 209 / 79%)), url(./Assets/call-bg.jpg);
     opacity: 0.8;
 }
 
