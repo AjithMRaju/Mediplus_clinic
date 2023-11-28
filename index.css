@@ -872,7 +872,7 @@
 /* clients overlay section starts */
 .clients_weaper{
     width: 100%;
-    background-image: linear-gradient(to right, rgb(26 118 209 / 72%), rgb(26 118 209 / 79%)), url(./Assets//client-bg.jpg);
+    background-image: linear-gradient(to right, rgb(26 118 209 / 72%), rgb(26 118 209 / 79%)), url(./Assets/client-bg.jpg);
     background-size: cover;
     background-position: center;
 }
