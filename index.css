@@ -77,17 +77,50 @@
 
 /* --------[[[]]]------- */
 /* carouserl stylings.. */
+
+.carousel-control-prev, 
+.carousel-control-next {
+    position: absolute !important;
+    top: 80% !important;
+    bottom: 10% !important;
+    z-index: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 15% !important;
+    padding: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    background: 0 0 !important;
+    border: 0 !important;
+    opacity: .5 !important;
+    transition: opacity .15s ease !important;
+}
+
+.carousel-control-prev {
+    left: 70% !important;
+    /* right: 5% !important; */
+}
+
+
+
+
+
+
+
+
 .img_class{
     position: relative;
     width: 100%;
-    height: 400px; 
+    height: 500px; 
     overflow: hidden;
 }
 
 
 .img_class::before{
     content: "";
-  background-image: url('./Assets/slider1.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+   url("https://wallpapercave.com/wp/wp2968489.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -100,7 +133,8 @@
 
 .img_class:nth-child(2)::before{
     content: "";
-    background-image: url('./Assets/slider2.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('./Assets//surgeon-face.jpg');
+    /* background-image: url('./Assets/slider2.jpg');  */
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -112,7 +146,10 @@
 }
 .img_class:nth-child(3)::before{
     content: "";
-    background-image: url('./Assets/slider3.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
+    url('https://www.missouripartnership.com/wp-content/uploads/2018/01/iStock-695349930.jpg'); 
+    /* background-image: url('./Assets/slider3.jpg');  */
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -125,7 +162,7 @@
 
 .text{
     width: max-content;
-    background-color: #f1f5f829;
+    /* background-color: #f1f5f829; */
 }
 
 
@@ -137,7 +174,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: #f1f5f838;
+    /* background-color: #f1f5f838; */
 }
 
 .text h1 span{
@@ -145,9 +182,13 @@
 }
 
 .text h1{
-    color: var(--title-clr);
+    color: var(--primery-clr);
 }
 
+
+.text p{
+    color: var(--primery-clr);
+}
 
 
 
@@ -235,7 +276,8 @@
 .outside__box:hover{
     transform: translateY(-5px);
     cursor: pointer;
-    /* box-shadow: 1px 5px 17px 0px rgba(26,118,209,0.75); */
+    /* box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333); */
+    
 }
 
 .inside__box {
